@@ -23,7 +23,6 @@ void main()
 		car = init_arr(256);
 		size_car = get_car(car);
 	}
-	int flag = 0;
 	menu(car, size_car);
 
 }
