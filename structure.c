@@ -47,8 +47,7 @@ int get_car(cars arr[])
     int i = 0;
     while (1)
     {
-        char letter;
-        letter = getchar();
+        int letter = getchar();
         if (letter != '\n')
         {
             if (i < 256)
@@ -196,6 +195,9 @@ case 3: {
 quick_sort_speed(arr, 0, size_car-1);
 break;
 }
+default: {
+ exit 0;   
+}
  }
 }
 
@@ -225,7 +227,7 @@ break;
 }
 }
 
-void menu(cars arr[], int size_car)
+void noreturn menu(cars arr[], int size_car)
 {
 int key;
 while (1) {
